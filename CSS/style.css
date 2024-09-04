@@ -1,0 +1,189 @@
+/* importação da fonte utilizada no trabalho */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    /* Padronização do formato da página */
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Variáveis com cores padrões do projeto */
+    --corFundo: #0E7C7B;
+    --corFonte: #E2B1B1;
+    --corSobreposicao: #172A3A;
+}
+
+body{
+    /* Confiuração padrão do body */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100vh;
+    background-color: var(--corFundo);
+    color: var(--corFonte);
+    font-family: Platypi;
+    padding: 16px;
+}
+
+header{
+    /* Confiuração padrão do header */
+    width: 100%;
+    font-family: Platypi;
+    font-size: 20px;
+}
+
+.titulo{
+    /* Confiuração apenas do titulo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.navegador{
+    /* Confiuração barra de navegação */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 16px;
+}
+
+a{
+    /* Coloração dos links e retirando a underline */
+    text-decoration: none;
+    color: var(--corFonte);
+}
+
+a:hover{
+    /* Underline ao passar o mouse por cima do link */
+    text-decoration: underline;
+}
+
+.container{
+    /* Confiuração de dimensionamento do container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    background-color: var(--corSobreposicao);
+    padding: 1%;
+    border-radius: 32px;
+}
+
+.txt{
+    /* Confiuração padrão dos textos */
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 32px;
+    gap: 16px;
+}
+
+.foto{
+     /* Dimensionamento das fotos */
+    display: grid;
+    grid-template-columns: repeat( autofill, minmax(100px, 1200px));
+    grid-row: repeat(autofill, minmax(80px, 100px));
+    gap: 16px;
+    padding-right: 24px;
+}
+
+img{
+     /* Configurações das fotos */
+    width: 450px;
+    border-radius: 32px;
+}
+
+/* Todos os box são dimensionamento do display das imagens */
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+footer{
+    /* configurações de rodapé */
+    padding: 16px;
+    margin-top:auto;
+    background-color: var(--corSobreposicao);
+    color: var(--corFonte);
+    text-align: center;
+    width: 100%;
+    border-radius: 32px;
+}
+
+@media(max-width: 1200px){ /* Configurações da responsividade */
+    *{
+        box-sizing: border-box;
+    }
+
+    body, header, footer{
+        width: 100%;
+    }
+
+    .navegador{
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .txt{
+        font-size: 20px;
+    }
+
+    img{
+        width: 15rem;
+    }
+
+    .box1{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .box2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .box3{
+        display: none;
+    }
+
+
+    .container{
+        flex-direction: column-reverse;
+        margin-bottom: 16px;
+        width: 100%;;
+    }
+
+}

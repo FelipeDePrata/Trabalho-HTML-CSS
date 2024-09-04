@@ -1,0 +1,215 @@
+/* importação da fonte utilizada no trabalho */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    /* Padronização do formato da página */
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Variáveis com cores padrões do projeto */
+    --corFundo: #0E7C7B;
+    --corFonte: #E2B1B1;
+    --corSobreposicao: #172A3A;
+    --fonte: Platypi;
+}
+
+body{
+    /* Confiuração padrão do body */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100vh;
+    background-color: var(--corFundo);
+    color: var(--corFonte);
+    font-family: Platypi;
+    padding: 16px;
+}
+
+header{
+    /* Confiuração padrão do header */
+    width: 100%;
+    font-family: Platypi;
+    font-size: 20px;
+}
+
+.titulo{
+    /* Confiuração apenas do titulo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.navegador{
+    /* Confiuração barra de navegação */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 16px;
+}
+
+a{
+    /* Coloração dos links e retirando a underline */
+    text-decoration: none;
+    color: var(--corFonte);
+}
+
+a:hover{
+    /* Underline ao passar o mouse por cima do link */
+    text-decoration: underline;
+}
+
+.container{
+    /* Confiuração de dimensionamento do container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+
+.txt{
+    /* Confiuração padrão dos textos */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 32px;
+}
+
+img{
+     /* Dimensionamento da foto */
+    width: 550px;
+    height: auto;
+    padding: 16px;
+    border-radius: 32px;
+}
+
+.contato{
+    /* Confiuração de dimensionamento das redes sociais */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px;
+    gap: 32px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+.redes{
+    /* Confiuração de dimensionamento dos links das redes sociais */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: solid var(--corSobreposicao);
+    border-radius: 8px;
+    width: auto;
+}
+
+.redeImg{
+    /* Confiuração de dimensionamento das imagens das redes sociais */
+    width: auto;
+    height: auto;
+    padding: 4px;
+}
+
+.redes:hover{
+    /* Para mudar de cor ao passar o mouse em cima da barra de redes sociais */
+    background-color: var(--corSobreposicao);
+    text-decoration: underline;
+}
+
+.formulario{
+    /* Configurações de dimensionamento do formulário */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--corSobreposicao);
+    padding: 24px;
+    border-radius: 32px;
+    gap: 16px;
+}
+
+.bttn{
+    /*Configurações de coloração, fonte e decoração do botão enviar */
+    color: var(--corFonte);
+    background-color: transparent;
+    border: none;
+    font-family: var(--fonte);
+}
+
+.bttn:hover{
+    /* Underline ao passar o mouse por cima do botão */
+    text-decoration: underline;
+}
+
+footer{
+    /* configurações de rodapé */
+    padding: 16px;
+    margin-top:auto;
+    background-color: var(--corSobreposicao);
+    color: var(--corFonte);
+    text-align: center;
+    width: 100%;
+    border-radius: 32px;
+}
+
+
+@media(max-width: 1200px){ /* Configurações da responsividade */
+    body, header{
+        font-size: 16px;
+    }
+
+    .navegador{
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .titulo{
+        font-size: 40px;
+        padding: 4px;
+    }
+
+    .txt{
+        padding: 32px;
+        font-size: 20px;
+    }
+
+    .foto, img{
+        width: 200px;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 5%;
+        width: 100%;;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,157 @@
+/* importação da fonte utilizada no trabalho */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    /* Padronização do formato da página */
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Variáveis com cores padrões do projeto */
+    --corFundo: #0E7C7B;
+    --corFonte: #E2B1B1;
+    --corSobreposicao: #172A3A;
+}
+
+body{
+    /* Confiuração padrão do body */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100vh;
+    background-color: var(--corFundo);
+    color: var(--corFonte);
+    font-family: Platypi;
+    padding: 16px;
+}
+
+header{
+    /* Confiuração padrão do header */
+    width: 100%;
+    font-family: Platypi;
+    font-size: 20px;
+}
+
+.titulo{
+    /* Confiuração apenas do titulo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.navegador{
+    /* Confiuração barra de navegação */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 16px;
+}
+
+a{
+    /* Coloração dos links e retirando a underline */
+    text-decoration: none;
+    color: var(--corFonte);
+}
+
+a:hover{
+    /* Underline ao passar o mouse por cima do link */
+    text-decoration: underline;
+}
+
+.container{
+    /* Confiuração de dimensionamento do container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.txt{
+    /* Confiuração padrão dos textos */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 32px;
+}
+
+.redirecionar{
+    /* Configuração do bloco com os links e projetos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    background-color: var(--corSobreposicao);
+    border-radius: 32px;
+    padding: 16px;
+}
+
+footer{
+    /* configurações de rodapé */
+    padding: 16px;
+    margin-top:auto;
+    background-color: var(--corSobreposicao);
+    color: var(--corFonte);
+    text-align: center;
+    width: 100%;
+    border-radius: 32px;
+}
+
+@media(max-width: 1200px){ /* Configurações da responsividade */
+    body, header{
+        font-size: 16px;
+    }
+
+    .navegador{
+        justify-content: center;
+    }
+
+    .titulo{
+        font-size: 40px;
+        padding: 4px;
+    }
+
+    .txt{
+        padding: 32px;
+        font-size: 20px;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 5%;
+        width: 100%;;
+    }
+
+    .redirecionar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .links{
+        padding: 16px;
+    }
+
+    .py{
+        padding: 6px;
+    }
+
+    .deco{
+        padding: 6px;
+    }
+}
