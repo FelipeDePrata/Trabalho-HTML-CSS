@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- link referenciando ao arquivo CSS */  -->
+    <link rel="stylesheet" href="./CSS/styleContato.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação com link para as outras páginas  -->
+        <nav class="navegador">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobreMim.html">Sobre Mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="projeto.html">Projeto</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <h1 class="titulo">Contato</h1> <!-- Titulo  -->
+    </header>
+
+    <main class="container"> <!-- Bloco contendo o texto da página, links e assets das redes sociais.  -->
+
+        <p class="txt">
+           A seguir estão as minhas redes sociais para contato ou me envie diretamente um mensagem:
+        </p>
+
+        <div class="contato">
+            <a class="redes" href="https://www.linkedin.com/in/felipe-jose-rj">Linkedin
+                <img class="redeImg" src="./ASSETS/linkedin.png">
+            </a>
+
+            <a class="redes" href="https://x.com/BeornDev">Twitter
+                <img class="redeImg" src="./ASSETS/twitter-novo.png">
+            </a>
+
+            <a class="redes" href="https://github.com/FelipeDePrata">GitHub
+                <img class="redeImg" src="./ASSETS/github.png">
+            </a>
+        </div>
+
+        <form class="formulario"> <!-- Formulário em caso de quiser enviar uma mensagem diretamente. OBS: GET/POST não foram considerados por ser feito apenas como trabalho  -->
+            Nome: <input id="name" type="text">
+            E-mail: <input id="email" type="email">
+            Assunto: <input class="assunto" type="text" size="50">
+            <input class="bttn" type="submit" Enviar>
+        </form>
+
+    </main>
+
+    <footer>Desenvolvido por Felipe José.</footer>
+</body>
+</html>
